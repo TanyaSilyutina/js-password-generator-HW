@@ -4,7 +4,7 @@ let generateBtn = document.querySelector("#generate");
 let lowercase, uppercase, numeric, special;
 
 // Create password length array to verify user input
-// arrayRange taken from freeCodeCamp
+// arrayRange https://www.freecodecamp.org/news/javascript-range-create-an-array-of-numbers-with-the-from-method/
 const arrayRange = (start, stop, step) =>
   Array.from(
     { length: (stop - start) / step + 1 },
@@ -30,22 +30,21 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
+// main function
 function generatePassword() {
   let userSelectedPasswordLength = promptUserForPasswordLength();
   if (userSelectedPasswordLength === false) return "";
   let chars = promptUserForCharacterTypes();
   let generatedPassword = "";
 
-  for(let i = 0; i < userSelectedPasswordLength; i++){
-    //generatedPassword.append(chars.match.random * 10
+  for (let i = 0; i < userSelectedPasswordLength; i++) {
     generatedPassword += chars.charAt(getRandomInt(chars.length));
   }
   return generatedPassword;
 }
 
 
-// Stores userChoice for password length as an int
+// Collect user input for password length
 function promptUserForPasswordLength() {
   while (true) {
     userSelectedPasswordLength = prompt("How many characters would you like in your password? \nPlease pick from 8 to 128.");
@@ -64,6 +63,7 @@ function promptUserForPasswordLength() {
   }
 }
 
+// Collect user input for password criteria
 function promptUserForCharacterTypes() {
   while (true) {
     lowercase = confirm("Include lowercase letters?");
@@ -77,7 +77,7 @@ function promptUserForCharacterTypes() {
     }
 
     let selectedCharsTypes = "";
-    
+
     if (lowercase) selectedCharsTypes += lowercaseChars;
     if (uppercase) selectedCharsTypes += uppercaseChars;
     if (numeric) selectedCharsTypes += numericChars;
@@ -85,7 +85,6 @@ function promptUserForCharacterTypes() {
 
     return selectedCharsTypes;
   }
-
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
