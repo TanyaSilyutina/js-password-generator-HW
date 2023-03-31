@@ -20,7 +20,7 @@ After intercating with multiple promts, user sees a randomly generated password 
 
 The below assignment requirements have been implemented in my application:
 
-* WHEN user clicks the button to generate a password 
+* WHEN user clicks the button to generate a password <br />
   THEN they are presented with a series of prompts for password criteria
 
 * WHEN prompted for password criteria <br />
