@@ -20,7 +20,7 @@ After intercating with multiple promts, user sees a randomly generated password 
 
 The below assignment requirements have been implemented in my application:
 
-* WHEN user clicks the button to generate a password <br />
+* WHEN user clicks the button to generate a password 
   THEN they are presented with a series of prompts for password criteria
 
 * WHEN prompted for password criteria <br />
@@ -49,8 +49,12 @@ THEN the password is either displayed in an alert or written to the page
 An unexpected challenge I came across was activating the 'cancel' button so that the user can exit the application.
 
 The below resources have been used to complete my JS code:
-* [Create an array range with n numbers]( https://www.freecodecamp.org/news/javascript-range-create-an-array-of-numbers-with-the-from-method/)
-* [Math.random function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+* [Create an array range with n numbers]( https://www.freecodecamp.org/news/javascript-range-create-an-array-of-numbers-with-the-from-method/)<br />
+*Used in lines 8 - 12 in script.js file*
+<br />
+
+* [Math.random function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) <br />
+*Used in lines 91 - 93 in script.js file*
 
 
 
