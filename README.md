@@ -20,11 +20,11 @@ The application includes multiple prompts to collect user input and determine pa
 
 The below example illustrates a prompt that collects the desired password length:
 
-![promt example](./Assets/Screenshot%202023-03-30%20at%208.53.41%20PM.png)
+![promt example](assets/Screenshot%202023-03-30%20at%208.53.41%20PM.png)
 
 After intercating with multiple promts, user sees a randomly generated password in the application window:
 
-![password example](./Assets/Screenshot%202023-03-30%20at%209.01.15%20PM.png)
+![password example](assets/Screenshot%202023-03-30%20at%209.01.15%20PM.png)
 
 ## Credits
 
